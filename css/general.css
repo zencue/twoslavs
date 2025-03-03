@@ -1,0 +1,83 @@
+html{
+    height:100%;
+}
+body{
+    font-family: 'Clash Grotesk', sans-serif;
+    margin:0px;
+    height:100%;
+    background-color: #102b3f;
+    color:#e2cfea;
+}
+footer{
+    align-self: flex-end;
+    margin:auto;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    display:flex;
+    justify-content: center;
+}
+header{
+    padding-top:10px;
+    background-color: #062726;
+}
+#icon{
+    width:50px;
+    height:50px;
+    justify-self:right;
+    margin:20px;
+}
+#label{
+    display:flex;justify-content:space-between;
+    
+}
+#title{
+    align-self: center;
+    justify-self: start;
+    margin:20px;
+    padding:0px;
+    color:#e2cfea;
+    font-weight: bold;
+    font-size:30px;
+    white-space: nowrap;
+  overflow: hidden; 
+  border-right: 3px solid white;
+  animation: cursor 1.5s step-end infinite; 
+}
+#bar{
+    display:flex;
+    justify-content:flex-end;
+}
+.btn{
+
+    max-width:30%;
+    padding:30px;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color: #102b3f;
+    color:#e2cfea;
+    font-size:medium ;
+}
+@keyframes cursor {
+    0% {
+      border-color: white;
+    }
+  
+    50% {
+      border-color: transparent;
+    }
+  
+    100% {
+      border-color: white;
+    }
+  }
+  
+
+  
+/*
+#e2cfea
+#a06cd5
+#6247aa
+#102b3f
+#062726
+
+*/
