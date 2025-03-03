@@ -3,13 +3,11 @@ body = document.getElementsByName("body")[0];
 description = document.getElementById("desc-text");
 function anim(str,element){
     let titleStr = Array.from(str);
-    console.log(titleStr)
     let time = 0;
     function frame() {
     if (time == titleStr.length) {
         clearInterval(id);
     } else {
-        console.log("g")
         element.textContent =element.textContent+titleStr[time];
         time++;
     }
