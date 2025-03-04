@@ -48,7 +48,7 @@ header{
     justify-content:flex-end;
 }
 .btn{
-
+  cursor: pointer;
     max-width:30%;
     padding:30px;
     padding-top:10px;
@@ -56,6 +56,7 @@ header{
     background-color: #102b3f;
     color:#e2cfea;
     font-size:medium ;
+    text-decoration:none;
 }
 @keyframes cursor {
     0% {
@@ -70,7 +71,12 @@ header{
       border-color: white;
     }
   }
-  
+
+a:link, a:visited,a:hover,a:active{
+  text-decoration:none;
+  color: #e2cfea;
+}
+
 
   
 /*
