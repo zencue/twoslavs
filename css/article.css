@@ -1,0 +1,68 @@
+#main-content{
+    height:100%;
+    display:flex;
+    justify-content: center;
+    padding-top:30px;
+}
+#article{
+    max-width: 50%;
+    color:whitesmoke;
+}
+#article-tags{
+    margin-top:70px;
+    border-top:2px solid #e2cfea;
+
+    padding-top:40px;
+    display:flex;
+    align-items: baseline;
+}
+#tags{
+    font-size:20px;
+    padding-left:20px;
+}
+#article-tags-title{
+    display:flex;
+    justify-content: left;
+    color:#e2cfea;
+    font-size:40px;
+    font-weight: 800;
+}
+#article-title{
+    display:flex;
+    justify-content: right;
+
+    font-size:80px;
+    font-weight: 900;
+}
+#article-text{
+    font-size:20px;
+    font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#article-references{
+    margin-top:70px;
+
+    padding-top:40px;
+}
+#article-references-title{
+    color:#e2cfea;
+    font-size:30px;
+    font-weight: 300;
+}
+#article-references-content{
+
+    font-size:20px;
+}
+.article-element{
+    animation: fade 2s;
+}
+@keyframes fade{
+    0%{
+        opacity:0;
+        transform: translateY(-40px);
+    }
+
+    100%{opacity:1;}
+  }
