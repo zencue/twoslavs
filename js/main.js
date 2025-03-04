@@ -1,7 +1,8 @@
-title = document.getElementById("title");
-body = document.getElementsByName("body")[0];
-description = document.getElementById("desc-text");
+
+
+elements = document.getElementsByClassName("animate-typed")
 function anim(str,element){
+    element.textContent = "";
     let titleStr = Array.from(str);
     let time = 0;
     function frame() {
@@ -12,8 +13,9 @@ function anim(str,element){
         time++;
     }
     }
-    let id = setInterval(frame, 25);
+    let id = setInterval(frame, 50);
+}
+for(let i = 0; i < elements.length; i++){
+    anim(elements[i].textContent, elements[i])
 }
 
-anim("Slav Clamp", title);
-anim("Slav Clamp is a platform dedicated to sharing insightful articles, innovative projects, and engaging blog content. Focused on diverse topics, it serves as a hub for knowledge, creativity, and collaboration. Whether you're looking for in-depth research, practical projects, or thought-provoking discussions, Slav Clamp provides a space for exploration and learning.", description);
