@@ -1,8 +1,9 @@
 #feed{
     padding-top:40px;
     display:grid;
-    max-width:70%;
-    gap:10%;
+    width:70%;
+    gap:25px;
+    grid-auto-columns: min-content;
 }
 #main-content{
     display:flex;
