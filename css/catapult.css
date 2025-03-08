@@ -1,0 +1,11 @@
+canvas{
+    background-color:#e2cfea;
+}
+input{
+    width:100%;
+    transition:1s;
+}
+.properties-input{
+    display:flex;
+    white-space: nowrap;
+}

@@ -39,8 +39,11 @@ for(i in articlesData){
 
     const descriptionAuthor = document.createElement("div");
     descriptionAuthor.setAttribute("class","description-author");
-    descriptionAuthor.textContent = "by "+ data["authors"][0];
 
+    descriptionAuthor.textContent = "by "+ data["authors"][0];
+    if( data["authors"].length>1){
+        descriptionAuthor.textContent+=", "+data["authors"][1]
+    }
     secondLine.appendChild(descriptionDate);
     secondLine.appendChild(descriptionAuthor);
     description.appendChild(secondLine);
