@@ -19,6 +19,13 @@ for(let i = 0; i < elements.length; i++){
     anim(elements[i].textContent, elements[i])
 }
 const tags = document.getElementById("tags");
+
+tagsList = articlesData[location.pathname.split("/").slice(-1)[0].split(".")[0]]["tags"]
 tagsStr = ""
 
+for(i in tagsList){
+    tagsStr+="#"+tagsList[i]+" "
+}
+tags.textContent = tagsStr
+console.log(tagsStr)
 
