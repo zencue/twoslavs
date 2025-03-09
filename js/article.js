@@ -18,4 +18,7 @@ function anim(str,element){
 for(let i = 0; i < elements.length; i++){
     anim(elements[i].textContent, elements[i])
 }
+const tags = document.getElementById("tags");
+tagsStr = ""
+
 
