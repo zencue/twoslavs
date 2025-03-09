@@ -8,12 +8,12 @@
     
 }
 .shadow-right{
-    box-shadow:inset -60px 0px 100px #102b3f; 
+    box-shadow:inset -40px -40px 100px #102b3f; 
 }
 .shadow-left{
-    box-shadow:inset 60px 0px 100px #102b3f; 
+    box-shadow:inset 40px -40px 100px #102b3f; 
 }
-#charts{
+.chart{
     position: relative;
 }
 input{
