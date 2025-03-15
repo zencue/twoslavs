@@ -16,6 +16,12 @@
 .chart{
     position: relative;
 }
+#simulation{
+  display:flex;
+  justify-content: center;
+  margin-top:20px;
+  margin-bottom:20px;
+}
 input{
     width:100%;
     transition:1s;
