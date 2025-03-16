@@ -8,6 +8,13 @@
     max-width: 50%;
     color:whitesmoke;
 }
+@media screen and (max-width: 500px) {
+    #article{
+        max-width: 90%;
+
+    }
+  }
+
 #article-tags{
     margin-top:70px;
     border-top:2px solid #e2cfea;

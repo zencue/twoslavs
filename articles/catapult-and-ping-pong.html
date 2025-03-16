@@ -27,21 +27,36 @@
     <div id = "main-content">
         <div id = "article">
             <div id="primary">
-                <div id= "article-title" class="article-element animate-typed">Catapult and Ping Pong</div>
+                <div id= "article-title" class="article-element animate-typed">Catapult and Ping Pong Ball</div>
                 <div id = "article-text" class="article-element">
-
+                    <h2>Preparation</h2>
+                    <p>
+                        The kinematics problem of calculating the movement of a ping pong ball is not as trivial as the most school problems we are given at school. First of all, this case involves air drag, or air resistance, and doesn't leave it as something negligible. 
+                        This means that there will be a force that opposes velocity and affects acceleration. Moreover, if we looked at the formula that describes this phenomenon:
+                    </p>
+                    <p>
+                        \[F_D = {{1\over{2}} \rho v^2C_DA}.\]
+                    </p>
+                    <p>
+                        We would notice that it contains velocity, meaning that it changes continuously as an object moves. Therefore, the acceleration is going to change, hence velocity. A question arises: how does acceleration change? In other words, 
+                    is this change linear or quadratic? Let's leave this question for later. 
+                    2.air resistance
+                    </p>
+                    <p>
+                        Next, the ping pong ball starts its flight by launching from catapult which 
+                    </p>
+                    <h2>First Failures</h2>
+                    1.First Attemot to estimate dy failed due to wrong estimation, of that ay is linear
                     
-                    <div id = "ay-graph">
                         <div id = "charts">
                             <div class = "chart">
-                                <canvas id="accelerations" style="width:100%;height:100%"></canvas>
+                                <canvas id="accelerations" style="width:100%;"></canvas>
                                     
                                     <div class = "shadow shadow-right"></div>
                             </div>
                             
                             <div class = "chart">
                                 <canvas id="velocities" style="width:100%;"></canvas>
-                                
                                     <div class = "shadow shadow-right"></div>
                             </div>
 
@@ -54,12 +69,12 @@
                             <Label class = "input-label" style ="wrap:nowrap">arm angle: </Label><input type="range" id="angle-length" name="angle-length" min="1" max="179" value="90" step="1" /><Label id = "angle-value" style ="wrap:nowrap">90</Label>
                         </div>
 
-
+                        1.time problems
+                        <h2>The Final Result</h2>
                         <div id = "simulation">
-                            <iframe src="https://editor.p5js.org/fedotpvlv53/full/LjPrRKyxB" style = "width:400px;height:441px;"></iframe>
-                       
+                            <iframe src="https://editor.p5js.org/zencue/full/LjPrRKyxB" style = "width:400px;height:441px;"></iframe>
                         </div>
-                    </div>
+                    
                     
                 </div> 
                 <div id = "article-tags" class="article-element">
@@ -90,6 +105,7 @@
 <script src="../js/main.js"></script>
 <script src="../articles-data.js"></script>
 <script src="../js/article.js"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 <script src="../js/catapult-calculator.js"></script>
 </html>

@@ -22,8 +22,6 @@ function plot(){
     Vx = velInitial(9*3,0.01,l)*Math.cos(alpha)
     
     Vy = velInitial(9*3 ,0.01,l)*Math.sin(alpha)
-    console.log("Vx: "+Vx+", Vy: "+Vy)
-    // console.log(Vy,w*Vy*Vy)
     Ay = (-m*9.8-w*Vy*Vy)/m;
     Ax = -w*(Vx)*(Vx)/m;
     Dy =1/(-Ay*3)*Vy*Vy;
@@ -61,7 +59,6 @@ function plot(){
         }
 
     }
-    console.log("Dx: "+x)
 }
 
 plot();
