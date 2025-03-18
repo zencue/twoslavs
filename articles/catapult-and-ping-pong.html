@@ -50,10 +50,28 @@
                             \(k\) - is a string constant<br>
                             \(x\) - is a deformation of a string
                         </p>
-
+                        centrepetal force and energy
                     </p>
                     <h2>First Failures</h2>
-                    At the beginning, the goal was to estimate \(d_y\) and \(d_x\).
+                    <p>
+                        At the beginning, the goal was to estimate \(d_y\) and \(d_x\). Then, it was decided to solve this problem without exact values, using only variables. First, \(d_y\) was an initial attempt solving this problem,
+                        using only school currciulum knowledge. So, We started approaching it by drawing FBD of a ball before it reaches the highest point:
+                    </p>
+                    
+                    <p>
+                        As we can clearly see, in a \(y\)-axiswe have only two forces oppose each other. Therefore we can write an equation using Newton's Second Law:
+                        \[-F_{Dy}-F_g=F_{net_y}\]
+                        
+                    </p>
+                    <p>
+                        In order to make our calculations look more pleasent, we can change 4 contsants in the Air Drag formula to just one:
+                        \[c_1={1\over{2}} \rho C_DA.\]
+                        Then, our equation would look like that:
+                        \[-v_y^2c_1-mg=ma_{y}\]
+                        From here we can find our velocity at any point before it starts falling:
+                        \[v_y = \sqrt{m(a_{y}+g)\over -c_1}\]
+                        Since we know that velocity is a derivative of displacement, we can take an integral
+                    </p>
                     
                         <div id = "charts">
                             <div class = "chart">
@@ -75,9 +93,12 @@
                         <div class = "properties-input">
                             <Label class = "input-label" style ="wrap:nowrap">arm angle: </Label><input type="range" id="angle-length" name="angle-length" min="1" max="179" value="90" step="1" /><Label id = "angle-value" style ="wrap:nowrap">90</Label>
                         </div>
-
+                        <h2>Next Findings</h2>
+                        1. Calculating the elastic laucnhing velocity and proving elastic force
+                        <h2>Simulation Development</h2>
                         1.time problems
                         <h2>The Final Result</h2>
+                        
                         <div id = "simulation">
                             <iframe src="https://editor.p5js.org/zencue/full/LjPrRKyxB" style = "width:400px;height:441px;"></iframe>
                         </div>

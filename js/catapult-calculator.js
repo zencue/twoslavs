@@ -19,9 +19,11 @@ function velInitial(k, m,l){
 
 function plot(){
     const l = Math.sqrt(armL*armL*2-2*armL*armL*Math.cos(2*alpha))
-    Vx = velInitial(9*3,0.01,l)*Math.cos(alpha)
+    console.log(l)
+    console.log(velInitial(9*2,0.028,l))
+    Vx = velInitial(9*2,0.01,l)*Math.cos(alpha)
     
-    Vy = velInitial(9*3 ,0.01,l)*Math.sin(alpha)
+    Vy = velInitial(9*2 ,0.01,l)*Math.sin(alpha)
     Ay = (-m*9.8-w*Vy*Vy)/m;
     Ax = -w*(Vx)*(Vx)/m;
     Dy =1/(-Ay*3)*Vy*Vy;

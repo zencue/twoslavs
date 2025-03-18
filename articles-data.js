@@ -11,6 +11,6 @@ articlesData={
         "authors":["Fedor", "Tymofiy"],
         "date":"2025.03.04",
         "cover":"img/catapult.jpg",
-        "tags":["physics"]
+        "tags":["physics","simulation"]
     },
 }
