@@ -13,13 +13,13 @@ let velY = [];
 let accX = [];
 let velX = [];
 //Velocity before catching air
-function velInitial(k, m,l){
-    return Math.sqrt(l*l*k/m);
+function velInitial(k, mass,l){
+    return Math.sqrt(k*l*l/mass-2*9.8*(l));
 }
 
 function plot(){
     const l = Math.sqrt(armL*armL*2-2*armL*armL*Math.cos(2*alpha))
-    console.log(l)
+    console.log(l,alpha)
     console.log(velInitial(9*2,0.028,l))
     Vx = velInitial(9*2,0.01,l)*Math.cos(alpha)
     

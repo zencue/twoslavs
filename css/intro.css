@@ -6,6 +6,7 @@
 }
 #description{
     max-width: 40%;
+    min-height:100vh;
     font-size:40px;
     }
 #desc-text{
