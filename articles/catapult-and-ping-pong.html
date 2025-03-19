@@ -118,7 +118,40 @@
                         </p>
                         
                         <h2>Next Findings</h2>
-                        1. Calculating the elastic laucnhing velocity and proving elastic force
+                        <p>
+                            Nevertheless, we came up with some good reasoning. As was mentioned before, we decided to develop a simulation of a ping pong ball that launches from a catapult. Also, a "calculator" was made in order to estimate values and resolve some issues.
+                            One of the thing we wanted to know was an initial velocity of the free flight. After trial and error, an interesting idea was found. Here, a concept of energy was used, to be specific, conservation of energy:
+                            \[K_1 + U_1 = K_2 + U_2\]
+                            The most famous types of energies at school are kinetic and gravitational potential energy. However, an elastic is involved, meaning that it is going to commit some work. This work is going to transform into kinetic and gravitational energiesat the final point.
+                            What is a work though? By definition, we can found it using this formula:
+                            \[W = F\Delta d\]
+                            Since we know that Tension can be found according to the Hooke's law:
+                            \[F_T=-kx\]
+                            However, there is a problem: F_T changes as the catapult's arm moves and shortnes the spring's length. Therefore, we have to calculate \(W\) at ach infinitaly short point of time. Or take an integral!
+                            But how? Well, we can plot F vs d graph, where F is a force at a certain d traveled, to imagine this scenario:
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="661.6000366210938" height="301.6000061035156" style="
+                                width:661.6000366210938px;
+                                height:301.6000061035156px;
+                                background: transparent;
+                                fill: none;
+                        ">
+                                
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" class="role-diagram-draw-area"><g class="shapes-region" style="stroke: black; fill: none;"><g class="composite-shape axis2d" style="stroke-width: 1; stroke: rgb(255, 255, 255); stroke-opacity: 1;"><path class="real" d=" M164,259.94 L496.8,259.94 M197.28,29 L197.28,285.6"/><path d=" M489.8,254.94 L496.8,259.94 L489.8,264.94"/><path d=" M192.28,36 L197.28,29 L202.28,36"/></g><g class="arrow-line"><path class="connection real" stroke-dasharray="" d="  M196.75,84.58 L405.58,260.34" style="stroke: rgb(255, 255, 255); stroke-width: 1; fill: none; fill-opacity: 1; stroke-opacity: 1;"/></g><g/></g><g/><g/><g/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="660" height="300" style="width:660px;height:300px;font-family:Asana-Math, Asana;background:transparent;"><g><g><g><text x="170.88751220703125" y="84.15000915527344" style="white-space:pre;stroke:none;fill:rgb(255,255,255);fill-opacity:1;font-size:15px;font-family:Arial, Helvetica, sans-serif;font-weight:400;font-style:normal;dominant-baseline:text-before-edge;text-decoration:none solid rgb(255, 255, 255);">kl</text></g></g></g><g><g><g><text x="395" y="263.1999969482422" style="white-space:pre;stroke:none;fill:rgb(255,255,255);fill-opacity:1;font-size:15px;font-family:Arial, Helvetica, sans-serif;font-weight:400;font-style:normal;dominant-baseline:text-before-edge;text-decoration:none solid rgb(255, 255, 255);">l</text></g></g></g><g><g><g><text x="176.79998779296875" y="32.399993896484375" style="white-space:pre;stroke:none;fill:rgb(255,255,255);fill-opacity:1;font-size:15px;font-family:Arial, Helvetica, sans-serif;font-weight:400;font-style:normal;dominant-baseline:text-before-edge;text-decoration:none solid rgb(255, 255, 255);">F</text></g></g></g><g><g><g><text x="485.79998779296875" y="263.40000915527344" style="white-space:pre;stroke:none;fill:rgb(255,255,255);fill-opacity:1;font-size:15px;font-family:Arial, Helvetica, sans-serif;font-weight:400;font-style:normal;dominant-baseline:text-before-edge;text-decoration:none solid rgb(255, 255, 255);">d</text></g></g></g></svg>
+                        </svg>
+                            </p>
+                           
+                            And it does make sense, because the force would .....
+                            Since integral is an area under the curve, we can find an area of this triangle, which would be:
+                            \[W = {kl^2\over 2}\]
+                            Turns out this is called elastic potential energy! Thus, we can put this work as a potential energy into the conservaton of energy law along with final gravitational and kinetic energies:
+                            \[{kl^2\over 2} = {mv^2\over 2}+ mgh\]
+                            Here we are! Now we can easily find velocity:
+                            \[v = \sqrt{{kl^2\over m}-2gh}\]
+
+                        </p>
                         <h2>Simulation Development</h2>
                         <h3>1.Main approach</h3>
                         <p>To simulate the physics of the ball, the object is created which stores 4 vectors.<br>
