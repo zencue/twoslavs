@@ -40,7 +40,6 @@
                     <p>
                         We would notice that it contains velocity, meaning that it changes continuously as an object moves. Therefore, the acceleration is going to change, hence velocity. A question arises: how does acceleration change? In other words, 
                     is this change linear or quadratic? Let's leave this question for later. 
-                    2.air resistance
                     </p>
                     <p>
                         Next, the ping pong ball starts its flight by launching from catapult which makes a circular move involving force of tension from an elastic. Here, there are two main parts that require 
@@ -86,13 +85,14 @@
                         Since we know that velocity is a derivative of displacement, we can take an integral of both sides:
                         \[\int_0^t v_y = \int_0^t \sqrt{m(a_{y}+g)\over -c_1}\]
                         \[\Delta d_y = \sqrt{m\over c_1} \int_0^t \sqrt{-a_{y}-g}\]
+                        Since this section is called "First Failures", we decided to assume that acceleration is changing constantly
+                        meaning that the derivative of \(a_y\) is constant:
                         \[\Delta d_y = \sqrt{m\over c_1}{-2\over{3a_y\prime}} ((-a_y(t)-g)^{3\over2} - (-a_y(0)-g)^{3\over2}) \]
                         We are gettig a long formula with 3 unknowns: \(a_y\prime\), \(-a_y(t)\), and \(-a_y(0)\). For the final acceleration, we know that at the highest point its acceleration 
                         is equal to gravity, as velocity is zero, hence air drag. \(-a_y(0)\) can be find from the previou formula:
                         \[-v_y(0)^2c_1-mg=ma_{y}(0)\]
                         \[-v_y(0)^2{c_1\over{m}}-g=a_{y}(0)\]
-                        However, whet it comes to finding a derivative of acceleration, we have to come up with some assumptions. Since this section is called "First Failures", we decided to assume that acceleration is changing constantly
-                        meaning that the derivative of \(a_y\) is constant. With that idea in mind, we tried to made following mathematical movements:
+                        However, whet it comes to finding a derivative of acceleration, we have to come up with some assumptions. It was already meantioned that we assume that derivative of the acceleration remains unchanged. With that idea in mind, we tried to made following mathematical movements:
                         \[(-v_y^2{c_1\over{m}}-g)\prime=a_{y}\prime\]
                         \[-2a_yv_y{c_1\over{m}}=a_{y}\prime\]
                         Since the \(a_y\prime\) is constant, we can take \(v_y(0) and a_y(0)\) as our numbers:
