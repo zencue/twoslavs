@@ -173,29 +173,30 @@
                         </p>
                         <h2>Simulation Development</h2>
                         <h3>1.Main approach</h3>
-                        <p>To simulate the physics of the ball, the object is created which stores 4 vectors.<br>
+                        <p> To simulate the ball's physics, an object is created to store four vectors:<br>
                             <p>     
                             1. Position.<br>
                             2. Net force.<br>
                             3. Net acceleration.<br>
                             4. Net Velocity.<br>
                             </p>
-                            Every vector is undefined at the first frame of the simulation, but the velocity, as it is set to a target value.
-                            Then each frame a force of drag is calculated, added to the constant force of gravity and the resultant is set as a net froce vector for the ball.<br>
-                            Next, the net force is devided by the mass of the ball and the result is set as the net acceleration for the ball. <br>
-                            After acceleration is found, it is added to the net velocity and finally at the end of the physics frame velocity is added to the position vector.
+                            At the first frame of the simulation, all vectors are undefined except for velocity, which is set to a target value.  
+                            In each frame, a drag force is calculated and added to the constant force of gravity, resulting in the net force vector for the ball.<br>
+                            The net force is then divided by the ball’s mass, producing the net acceleration.<br>
+                            This acceleration is added to the net velocity, and finally, the updated velocity is added to the position vector at the end of each physics frame.
                         </p>
                         <h3>2. I love and hate rendering</h3>
-                            For me create physics simulation was much simpler then render it. First of all, All results are stored in CI units, in this case it was meters, kilograms
-                            and second. Because of this 1 pixel on the screen corresponded to 1 meter, so the simulation wasn't spectecular at all. When ball moved 10 meters, on the screen it only moved 10 pixels (unless you set its initial speed to 1 km/s)...
-                            this meant that i need to scale everything by 100 to make 1 pixel correspond to 1 cm. But now the camera that followed ball's movement 
-                            were broken. Even though i scaled it correctly it behaved as if it was scaled ten times as much. Fortunetly, rendering works independently of the physics so 
-                            me messing up one part wouldn't break the other. In the end it turned out that i scaled the camera correctly but i didn't scale the ball's position XD.
-                            Any way this chapter is just me crying about how counter-intuitive the renderin is. For example to make camera follow something, you dont need to actually move the camera
-                            but rather shift everything opposite to the camera. I HATE IT.
+                        For me, creating the physics simulation was much simpler than rendering it. All results are stored in SI units—meters, kilograms, and seconds.  
+                        Because of this, 1 pixel on the screen corresponded to 1 meter, making the simulation appear underwhelming. If the ball moved 10 meters, it only moved 10 pixels on the screen (unless its initial speed was set to something extreme like 1 km/s).  
+                        To fix this, I scaled everything by 100 so that 1 pixel corresponded to 1 cm. However, this change broke the camera that was supposed to follow the ball's movement.  
+                        Even though I applied the scaling correctly, the camera behaved as if it was scaled ten times as much.  
+                        Fortunately, rendering works independently of physics, so messing up one part didn’t break the other.  
+                        It turned out I had scaled the camera correctly, but I hadn’t scaled the ball’s position XD.  
+                        Anyway this whole chapter is just me venting about how counterintuitive rendering can be. For example, to make a camera follow something, you don’t actually move the camera—you shift everything else in the opposite direction. I HATE IT.
                         <h3>3. Time problems</h3> 
-                            Well, when the scale was fixed, the simulation still sucked. Who needs normal scale when the time in which the ball arrives is less than a second.
-                            To fix it we decided to implement slow motion effect. Firstly, we just scaled every vector down by a bit, but soon we realized that now this scale affects 
+                        Even after fixing the scale, the simulation still felt off. Having a realistic scale is pointless if the ball reaches its destination in less than a second.  
+                        To address this, we implemented a slow-motion effect. At first, we simply scaled down every vector, but we quickly realized that this scaling affected, everything linearly but, some parts of the simulation change not linearly,
+                        that way the result was changing depenging on the time scale. This wouldn't work. So we came up with another solution! Instead of slowing everything down, the program precalculates ball trajectory before displaying it. So now we can controll how fast the ball is moving without affecting physics part of it.
                         <h2>The Final Result</h2>
                         Controlls:
                         <p>Space - to reset.</p>
