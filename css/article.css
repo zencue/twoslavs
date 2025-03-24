@@ -4,6 +4,9 @@
     justify-content: center;
     padding-top:30px;
 }
+#primary{
+    overflow: hidden;
+}
 #cover{
     display:none
 }
@@ -11,7 +14,10 @@
     max-width: 50%;
     color:whitesmoke;
 }
-@media screen and (max-width: 500px) {
+.markdown-rendered mjx-container {
+    overflow-x: scroll;
+}
+@media screen and (max-width: 600px) {
     #article{
         max-width: 90%;
 
@@ -25,6 +31,8 @@
         font-size: 20px;;
         max-width:100vw;
         height:100vh;
+        right:0;
+        top:0;
         background-color: #102b3f;
         color:#e2cfea;
     }

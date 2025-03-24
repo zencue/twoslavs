@@ -21,7 +21,7 @@
   justify-content: center;
   margin-top:20px;
   margin-bottom:20px;
-  height:400px;
+  height:425px;
   overflow:hidden;
   align-items:end;
 }
@@ -34,6 +34,7 @@ input{
     padding-right:20px;
     padding-left:20px;
 }
+
 .properties-input{
   margin-top:20px;
   margin-bottom:20px;

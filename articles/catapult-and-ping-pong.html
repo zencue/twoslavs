@@ -10,12 +10,24 @@
 <link rel="stylesheet" href="../css/article.css">
 <link rel="stylesheet" href="../css/catapult.css">
     <link rel="stylesheet" href="../css/style.css">
-    
+    <script type="text/x-mathjax-config">
+
+        MathJax.Hub.Config({
+        tex2jax: { inlineMath: [["$","$"],["\\(","\\)"]] },
+        "HTML-CSS": {
+            linebreaks: { automatic: true, width: "container" }       
+        }              
+        });
+
+          </script>
+          <script type="text/javascript"
+            src="https://example.com/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+          </script>
     <title>twoslavs</title>
 </head>
 
 <body>
-    <div id = "cover"> Unfortunately, developers can't make this page look good for narrow devices, so please open it using a laptop or computer😔</div>
+    <!-- <div id = "cover"> Unfortunately, developers can't make this page look good for narrow devices, so please open it using a laptop or computer😔</div> -->
             
     <header>
         <div id = "label"><div id = "title" class="animate-typed">twoslavs</div><img id = "icon" src="../Icon.png"></div>
@@ -62,18 +74,19 @@
                         In the beginning, the goal was to estimate \(d_y\) and \(d_x\). 
                         Then, it was decided to solve this problem without exact values, using only variables. First,\(d_y\) was an initial attempt to solve this problem, using only school curriculum knowledge. So, We started approaching it by drawing the FBD of a ball before it reached the highest point:
                  </p>
-                    <p>
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="661.6000366210938" height="301.6000061035156" style="
-        width:661.6000366210938px;
+                 <p style = "max-width:100%;display:flex;justify-content: center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="361.6000061035156" height="301.6000061035156" style="
+        width:361.6000061035156px;
         height:301.6000061035156px;
         background: transparent;
         fill: none;
 ">
+        <svg xmlns="http://www.w3.org/2000/svg"/>
         
-        
-        <svg xmlns="http://www.w3.org/2000/svg" class="role-diagram-draw-area"><g class="shapes-region" style="stroke: black; fill: none;"><g class="composite-shape"><path class="real" d=" M227,88 L389.6,88 L389.6,158.71 L227,158.71 Z" style="stroke-width: 1; stroke: rgb(255, 255, 255); fill: none; fill-opacity: 1; stroke-opacity: 1;"/></g><g class="arrow-line"><path class="connection real" stroke-dasharray="" d="  M308.3,123.35 L307.84,265.6" style="stroke: rgb(255, 255, 255); stroke-width: 1; fill: none; fill-opacity: 1; stroke-opacity: 1;"/><g stroke="rgb(255,255,255)" transform="matrix(0.003141587485879184,-0.9999950652018582,0.9999950652018582,0.003141587485879184,307.83659303228717,267.59999084472656)" style="stroke: rgb(255, 255, 255); stroke-width: 1;" stroke-opacity="1"><path d=" M10.93,-3.29 Q4.96,-0.45 0,0 Q4.96,0.45 10.93,3.29"/></g></g><g class="arrow-line"><path class="connection real" stroke-dasharray="" d="  M340.36,126.18 L340.36,209.03" style="stroke: rgb(255, 255, 255); stroke-width: 1; fill: none; fill-opacity: 1; stroke-opacity: 1;"/><g stroke="rgb(255,255,255)" transform="matrix(-1.8369701987210297e-16,-1,1,-1.8369701987210297e-16,340.3570729009807,211.03305949711847)" style="stroke: rgb(255, 255, 255); stroke-width: 1;" stroke-opacity="1"><path d=" M10.93,-3.29 Q4.96,-0.45 0,0 Q4.96,0.45 10.93,3.29"/></g></g><g class="arrow-line"><path class="connection real" stroke-dasharray="" d="  M308.3,123.35 L208.8,122.61" style="stroke: rgb(255, 255, 255); stroke-width: 1; fill: none; fill-opacity: 1; stroke-opacity: 1;"/><g stroke="rgb(255,255,255)" transform="matrix(0.9999718382517224,0.007504845332927145,-0.007504845332927145,0.9999718382517224,206.79998779296875,122.59999084472656)" style="stroke: rgb(255, 255, 255); stroke-width: 1;" stroke-opacity="1"><path d=" M10.93,-3.29 Q4.96,-0.45 0,0 Q4.96,0.45 10.93,3.29"/></g></g><g/></g><g/><g/><g/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="660" height="300" style="width:660px;height:300px;font-family:Asana-Math, Asana;background:transparent;"><g><g><g><text x="260.92498779296875" y="212.3625030517578" style="white-space:pre;stroke:none;fill:rgb(255,255,255);fill-opacity:1;font-size:15px;font-family:Arial, Helvetica, sans-serif;font-weight:400;font-style:normal;dominant-baseline:text-before-edge;text-decoration:none solid rgb(255, 255, 255);">mg</text></g></g></g><g><g><g><text x="373.4124755859375" y="185.83750915527344" style="white-space:pre;stroke:none;fill:rgb(255,255,255);fill-opacity:1;font-size:15px;font-family:Arial, Helvetica, sans-serif;font-weight:400;font-style:normal;dominant-baseline:text-before-edge;text-decoration:none solid rgb(255, 255, 255);">Fdy</text></g></g></g><g><g><g><text x="189.79998779296875" y="95.40000915527344" style="white-space:pre;stroke:none;fill:rgb(255,255,255);fill-opacity:1;font-size:15px;font-family:Arial, Helvetica, sans-serif;font-weight:400;font-style:normal;dominant-baseline:text-before-edge;text-decoration:none solid rgb(255, 255, 255);">Fdx</text></g></g></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="role-diagram-draw-area"><g class="shapes-region" style="stroke: black; fill: none;"><g class="composite-shape"><path class="real" d=" M54,85 L304.8,85 L304.8,223.6 L54,223.6 Z" style="stroke-width: 1; stroke: rgb(255, 255, 255); fill: none; fill-opacity: 1; stroke-opacity: 1;"/></g><g class="arrow-line"><path class="connection real" stroke-dasharray="" d="  M174.8,152.6 L173.82,274.6" style="stroke: rgb(255, 255, 255); stroke-width: 1; fill: none; fill-opacity: 1; stroke-opacity: 1;"/><g stroke="rgb(255,255,255)" transform="matrix(0.00802842831039579,-0.9999677716500992,0.9999677716500992,0.00802842831039579,173.79998779296875,276.59999084472656)" style="stroke: rgb(255, 255, 255); stroke-width: 1;" stroke-opacity="1"><path d=" M10.93,-3.29 Q4.96,-0.45 0,0 Q4.96,0.45 10.93,3.29"/></g></g><g class="arrow-line"><path class="connection real" stroke-dasharray="" d="  M202.8,153 L203.78,247.6" style="stroke: rgb(255, 255, 255); stroke-width: 1; fill: none; fill-opacity: 1; stroke-opacity: 1;"/><g stroke="rgb(255,255,255)" transform="matrix(-0.010297260602190363,-0.9999469818065809,0.9999469818065809,-0.010297260602190363,203.79998779296875,249.59999084472653)" style="stroke: rgb(255, 255, 255); stroke-width: 1;" stroke-opacity="1"><path d=" M10.93,-3.29 Q4.96,-0.45 0,0 Q4.96,0.45 10.93,3.29"/></g></g><g class="arrow-line"><path class="connection real" stroke-dasharray="" d="  M169.8,151.6 L28.8,150.61" style="stroke: rgb(255, 255, 255); stroke-width: 1; fill: none; fill-opacity: 1; stroke-opacity: 1;"/><g stroke="rgb(255,255,255)" transform="matrix(0.9999756307053947,0.006981260297960873,-0.006981260297960873,0.9999756307053947,26.79998779296875,150.59999084472656)" style="stroke: rgb(255, 255, 255); stroke-width: 1;" stroke-opacity="1"><path d=" M10.93,-3.29 Q4.96,-0.45 0,0 Q4.96,0.45 10.93,3.29"/></g></g><g/></g><g/><g/><g/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="360" height="300" style="width:360px;height:300px;font-family:Asana-Math, Asana;background:#FFF;"><g><g><g><text x="141.79998779296875" y="249.40000915527344" style="white-space:pre;stroke:none;fill:rgb(255,255,255);fill-opacity:1;font-size:15px;font-family:Arial, Helvetica, sans-serif;font-weight:400;font-style:normal;dominant-baseline:text-before-edge;text-decoration:none solid rgb(255, 255, 255);">mg</text></g></g></g><g><g><g><text x="217.79998779296875" y="235.40000915527344" style="white-space:pre;stroke:none;fill:rgb(255,255,255);fill-opacity:1;font-size:15px;font-family:Arial, Helvetica, sans-serif;font-weight:400;font-style:normal;dominant-baseline:text-before-edge;text-decoration:none solid rgb(255, 255, 255);">Fdy</text></g></g></g><g><g><g><text x="15.79998779296875" y="178.40000915527344" style="white-space:pre;stroke:none;fill:rgb(255,255,255);fill-opacity:1;font-size:15px;font-family:Arial, Helvetica, sans-serif;font-weight:400;font-style:normal;dominant-baseline:text-before-edge;text-decoration:none solid rgb(255, 255, 255);">Fdx</text></g></g></g></svg>
 </svg>
+
 
                     </p>
                     <p>
@@ -114,13 +127,13 @@
                     
                         <div id = "charts">
                             <div class = "chart">
-                                <canvas id="accelerations" style="width:100%;"></canvas>
+                                <canvas id="accelerations" style="width:100%;height:300px"></canvas>
                                     
                                     <div class = "shadow shadow-right"></div>
                             </div>
                             
                             <div class = "chart">
-                                <canvas id="velocities" style="width:100%;"></canvas>
+                                <canvas id="velocities" style="width:100%;height:300px"></canvas>
                                     <div class = "shadow shadow-right"></div>
                             </div>
 
@@ -146,20 +159,24 @@
                             \[W = F\Delta d\]
                             Since we know that Tension can be found according to the Hooke's law:
                             \[F_T=-kx\]
-                            However, there is a problem: F_T changes as the catapult's arm moves and shortens the spring's length. Therefore, we have to calculate \(W\) at an infinitely short point in time. Or take an integral!
+                            However, there is a problem: \(F_T\) changes as the catapult's arm moves and shortens the spring's length. Therefore, we have to calculate \(W\) at an infinitely short point in time. Or take an integral!
                             But how? Well, we can plot the F vs d graph, where F is a force at a certain d traveled, to imagine this scenario:
-                            <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="661.6000366210938" height="301.6000061035156" style="
-                                width:661.6000366210938px;
-                                height:301.6000061035156px;
-                                background: transparent;
-                                fill: none;
-                        ">
-                                
-                                
-                                <svg xmlns="http://www.w3.org/2000/svg" class="role-diagram-draw-area"><g class="shapes-region" style="stroke: black; fill: none;"><g class="composite-shape axis2d" style="stroke-width: 1; stroke: rgb(255, 255, 255); stroke-opacity: 1;"><path class="real" d=" M164,259.94 L496.8,259.94 M197.28,29 L197.28,285.6"/><path d=" M489.8,254.94 L496.8,259.94 L489.8,264.94"/><path d=" M192.28,36 L197.28,29 L202.28,36"/></g><g class="arrow-line"><path class="connection real" stroke-dasharray="" d="  M196.75,84.58 L405.58,260.34" style="stroke: rgb(255, 255, 255); stroke-width: 1; fill: none; fill-opacity: 1; stroke-opacity: 1;"/></g><g/></g><g/><g/><g/></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="660" height="300" style="width:660px;height:300px;font-family:Asana-Math, Asana;background:transparent;"><g><g><g><text x="170.88751220703125" y="84.15000915527344" style="white-space:pre;stroke:none;fill:rgb(255,255,255);fill-opacity:1;font-size:15px;font-family:Arial, Helvetica, sans-serif;font-weight:400;font-style:normal;dominant-baseline:text-before-edge;text-decoration:none solid rgb(255, 255, 255);">kl</text></g></g></g><g><g><g><text x="395" y="263.1999969482422" style="white-space:pre;stroke:none;fill:rgb(255,255,255);fill-opacity:1;font-size:15px;font-family:Arial, Helvetica, sans-serif;font-weight:400;font-style:normal;dominant-baseline:text-before-edge;text-decoration:none solid rgb(255, 255, 255);">l</text></g></g></g><g><g><g><text x="176.79998779296875" y="32.399993896484375" style="white-space:pre;stroke:none;fill:rgb(255,255,255);fill-opacity:1;font-size:15px;font-family:Arial, Helvetica, sans-serif;font-weight:400;font-style:normal;dominant-baseline:text-before-edge;text-decoration:none solid rgb(255, 255, 255);">F</text></g></g></g><g><g><g><text x="485.79998779296875" y="263.40000915527344" style="white-space:pre;stroke:none;fill:rgb(255,255,255);fill-opacity:1;font-size:15px;font-family:Arial, Helvetica, sans-serif;font-weight:400;font-style:normal;dominant-baseline:text-before-edge;text-decoration:none solid rgb(255, 255, 255);">d</text></g></g></g></svg>
-                            </svg>
+                            <p style = "max-width:100%;display:flex;justify-content: center;">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="361.6000061035156" height="301.6000061035156" style="
+        width:361.6000061035156px;
+        height:301.6000061035156px;
+        background-color: transparent;
+        fill: none;
+">
+        <svg xmlns="http://www.w3.org/2000/svg"/>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" class="role-diagram-draw-area"><g class="shapes-region" style="stroke: black; fill: none;"><g class="composite-shape axis2d" style="stroke-width: 1; stroke: rgb(255, 255, 255); stroke-opacity: 1;"><path class="real" d=" M-10,249.04 L348.8,249.04 M25.88,10 L25.88,275.6"/><path d=" M341.8,244.04 L348.8,249.04 L341.8,254.04"/><path d=" M20.88,17 L25.88,10 L30.88,17"/></g><g class="arrow-line"><path class="connection real" stroke-dasharray="" d="  M25.8,95.6 L177.8,250.6" style="stroke: rgb(255, 255, 255); stroke-width: 1; fill: none; fill-opacity: 1; stroke-opacity: 1;"/></g><g/></g><g/><g/><g/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="360" height="300" style="width:360px;height:300px;font-family:Asana-Math, Asana;background:#FFF;"><g><g><g><text x="40.79998779296875" y="5.399993896484375" style="white-space:pre;stroke:none;fill:rgb(255,255,255);fill-opacity:1;font-size:15px;font-family:Arial, Helvetica, sans-serif;font-weight:400;font-style:normal;dominant-baseline:text-before-edge;text-decoration:none solid rgb(255, 255, 255);">F</text></g></g></g><g><g><g><text x="336.79998779296875" y="221.40000915527344" style="white-space:pre;stroke:none;fill:rgb(255,255,255);fill-opacity:1;font-size:15px;font-family:Arial, Helvetica, sans-serif;font-weight:400;font-style:normal;dominant-baseline:text-before-edge;text-decoration:none solid rgb(255, 255, 255);">d</text></g></g></g><g><g><g><text x="32.79998779296875" y="80.40000915527344" style="white-space:pre;stroke:none;fill:rgb(255,255,255);fill-opacity:1;font-size:15px;font-family:Arial, Helvetica, sans-serif;font-weight:400;font-style:normal;dominant-baseline:text-before-edge;text-decoration:none solid rgb(255, 255, 255);">kl</text></g></g></g><g><g><g><text x="178.79998779296875" y="229.40000915527344" style="white-space:pre;stroke:none;fill:rgb(255,255,255);fill-opacity:1;font-size:15px;font-family:Arial, Helvetica, sans-serif;font-weight:400;font-style:normal;dominant-baseline:text-before-edge;text-decoration:none solid rgb(255, 255, 255);">l</text></g></g></g></svg>
+</svg>
+
+
+
+                        
                             </p>
                            
                             And it does make sense because the force would .....
@@ -203,7 +220,7 @@
                         <p>Enter - to launch.</p>
                         <p>Up/Down - to speed up/down the simulation.</p>
                         <div id = "simulation">
-                            <iframe src="https://editor.p5js.org/zibada2007/full/lLkzIiONL" style = "width:401px;height:460px;"></iframe>
+                            <iframe src="https://editor.p5js.org/zencue/full/LjPrRKyxB" style = "width:401px;height:470px;"></iframe>
                         </div>
                     
                     
