@@ -88,6 +88,14 @@
 .article-element{
     animation: fade 2s;
 }
+img{
+    max-width:80%;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+}
 @keyframes fade{
     0%{
         opacity:0;
